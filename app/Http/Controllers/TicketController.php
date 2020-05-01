@@ -30,6 +30,12 @@ class TicketController extends Controller
         return view('tickets.create');
     }
 
+    public function delete(Ticket $ticket)
+    {
+        //
+        return view('tickets.delete', compact('ticket'));
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -50,6 +56,7 @@ class TicketController extends Controller
     public function show(Ticket $ticket)
     {
         //
+        return view('tickets.show', compact('ticket'));
     }
 
     /**
@@ -72,7 +79,13 @@ class TicketController extends Controller
      */
     public function update(Request $request, Ticket $ticket)
     {
-        //
+       
+        $ticket->summary = request('summary');
+        $ticket->description = request('description');
+        $ticket->status = request('status');
+        $ticket->save();
+
+        return redirect()->route('tickets.index');
     }
 
     /**
@@ -84,5 +97,7 @@ class TicketController extends Controller
     public function destroy(Ticket $ticket)
     {
         //
+        $ticket->delete();
+        return redirect()->route('tickets.index');
     }
 }

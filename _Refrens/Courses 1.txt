@@ -1,0 +1,11 @@
+lesson 1 :
+#######
+setting database :
+C:\xampp\htdocs\tickets\.env
+#######
+pembuatan table migration ke database and controller resource : 
+php artisan make:model Ticket -mr
+#######
+migration table :
+php artisan migrate
+#######

@@ -1,0 +1,9 @@
+lesson 3 :
+#######
+Pembuatan Factory :
+php artisan make:factory TicketFactory
+C:\xampp\htdocs\tickets\database\factories
+setting sesuai table dan data yang mau di generate
+#######
+php artisan tinker
+$tickets = factory('App\Ticket', 100)->create();

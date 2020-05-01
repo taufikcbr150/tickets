@@ -1,4 +1,4 @@
 ##########
-https://www.laravelplay.com/video/build-a-ticket-management-system-in-laravel-updating-tickets-716.115
+https://www.laravelplay.com/video/build-a-ticket-management-system-in-laravel-adding-new-tickets-6516.117
 Build A Ticket Management System In Laravel: Generating Test Data (4/16)
 ##########

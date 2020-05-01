@@ -1,0 +1,13 @@
+git config --list
+git config --global user.name "taufikcbr150"
+git config --global user.email taufikcbr150@gmail.com
+#########
+git init
+git status
+git add .
+git init
+git config --list
+git commit -m "first commit"
+git remote add origin https://github.com/taufikcbr150/tickets.git
+git pull origin master
+git push origin master

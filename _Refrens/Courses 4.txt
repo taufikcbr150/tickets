@@ -1,0 +1,18 @@
+lesson 4 :
+#######
+Pemanggilan data :
+C:\xampp\htdocs\tickets\app\Http\Controllers\TicketController.php
+$tickets = Ticket::latest()->get(); 
+// dd($tickets); untuk panggil array dummy data
+return view('tickets.index', compact('tickets'));
+#######
+membuat perulangan views
+C:\xampp\htdocs\tickets\resources\views\tickets\index.blade.php
+@foreach($tickets as $ticket)
+    <tr>
+        <td>{{$ticket->id}}</td>
+        <td>{{$ticket->summary}}</td>
+        <td>{{$ticket->description}}</td>
+        <td>{{$ticket->status}}</td>
+    </tr>
+@endforeach

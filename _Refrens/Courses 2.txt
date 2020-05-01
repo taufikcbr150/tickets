@@ -1,0 +1,8 @@
+lesson 2 :
+#######
+pembuatan layouts bootstrap
+https://getbootstrap.com/docs/4.4/examples/dashboard/
+#######
+pembuatan route
+Route::get('/tickets', 'TicketController@index')->name('tickets.index');
+Route::get('/tickets/create', 'TicketController@create')->name('tickets.create');
